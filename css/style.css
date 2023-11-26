@@ -665,6 +665,7 @@ li.pricing__item-name {
 
 .form {
   width: 570px;
+  position: relative;
 }
 
 .form input,
