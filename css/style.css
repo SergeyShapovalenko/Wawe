@@ -7,6 +7,10 @@ font-family: 'Roboto Condensed',
 sans-serif; 
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   color: #242121;
@@ -75,7 +79,8 @@ body._lock {
 }
 
 .header__top {
-  padding-top: 35px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   position: fixed;
   left: 0;
   right: 0;
@@ -113,17 +118,9 @@ body._lock {
   transition: fill 0.3s ease;
 }
 
-.header__logo-svg:hover {
-  fill: #00B2A0;
-}
-
 .header__icon-svg {
   fill: #fff;
   transition: fill 0.3s ease;
-}
-
-.header__icon-svg:hover {
-  fill: #00B2A0;
 }
 
 .header__top-inner {
@@ -885,6 +882,10 @@ textarea::placeholder {
   .gallery__add:hover {
     background-color: #00B2A0;
     color: #fff;
+  }
+
+  .header__logo-svg:hover {
+  fill: #00B2A0;
   }
 }
 
