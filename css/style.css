@@ -665,7 +665,6 @@ li.pricing__item-name {
 
 .form {
   width: 570px;
-  position: relative;
 }
 
 .form input,
@@ -679,6 +678,7 @@ form textarea {
 .form input {
   height: 38px; 
   margin-bottom: 35px;
+  position: relative;
 }
 
 .form input:last-of-type {
