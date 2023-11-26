@@ -673,12 +673,12 @@ form textarea {
   display: block;
   border-bottom: 2px solid #DADADA;
   width: 100%;
+  position: relative;
 }
 
 .form input {
   height: 38px; 
   margin-bottom: 35px;
-  position: relative;
 }
 
 .form input:last-of-type {
