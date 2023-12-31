@@ -678,7 +678,6 @@ form textarea {
   margin-bottom: 35px;
 }
 
-<<<<<<< HEAD
 input:focus,
 textarea:focus,
 select:focus {
@@ -686,8 +685,6 @@ select:focus {
   box-shadow: 0 0 5px #00B2A0;
 }
 
-=======
->>>>>>> dc4aa03391de3469e7cbaf53cb47fff5195bd622
 .form input:last-of-type {
   margin-bottom: 55px;
 }
