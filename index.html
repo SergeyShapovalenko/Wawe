@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wawe</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <a href="#header" class="logo header__logo">
+            <svg class="header__logo-svg header__icon-svg" width="60" height="63" viewBox="0 0 60 63" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+
+              <path
+                d="M11.412 29.512H16.02L18.936 37.972L21.888 29.512H26.46L22.068 41.14L25.308 49.276L32.544 29.44H37.944L27.72 55H23.436L18.936 44.272L14.472 55H10.188L0 29.44H5.328L12.6 49.276L15.768 41.14L11.412 29.512Z" />
+              <path
+                d="M33.412 8.512H38.02L40.936 16.972L43.888 8.512H48.46L44.068 20.14L47.308 28.276L54.544 8.44H59.944L49.72 34H45.436L40.936 23.272L36.472 34H32.188L22 8.44H27.328L34.6 28.276L37.768 20.14L33.412 8.512Z" />
+            </svg>
+          </a>
+          <nav class="menu">
+            <div class="menu__btn">
+              <span></span>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a data-goto=".about" href="#" class="menu__list-link">
+                  About Us
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a data-goto=".features" href="#" class="menu__list-link">
+                  Services
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a data-goto=".pricing" href="#" class="menu__list-link">
+                  Pricing
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a data-goto=".slider-blog" href="#" class="menu__list-link">
+                  Blog
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a data-goto=".team" href="#" class="menu__list-link">
+                  Team
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a data-goto=".connection__request" href="#" class="menu__list-link">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__content">
+      <div class="container">
+        <div class="header__content-inner">
+          <h1 class="header__title">
+            WAWE
+          </h1>
+          <h4 class="header__subtitle">
+            Surfing School on the Canary Islands
+          </h4>
+          <a href="" class="header__icon">
+            <svg class="header__icon-svg" width="20" height="69" viewBox="0 0 20 69" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.8372 43.7682C19.0787 29.7428 16.111 13.8178 11.4111 1.77122C11.7245 1.0447 11.245 -0.219081 10.6159 0.0326471C3.22778 2.98797 1.14916 23.5694 0.389332 33.3937C-0.448886 44.2302 -0.682241 64.7384 7.76561 68.3159C11.2466 69.7906 15.3789 67.8922 17.6002 63.2946C20.1916 57.9311 20.1853 50.2029 19.8372 43.7682ZM16.8406 34.0295C14.5593 33.4665 11.3791 34.5443 10.0267 34.8442C9.47931 34.9655 8.94625 35.1128 8.41274 35.2602C8.47568 25.0581 9.31389 14.7821 10.1589 4.68098C12.1544 10.8709 15.1717 22.5577 16.8406 34.0295ZM15.6045 37.7246C15.5332 37.9289 15.4698 38.1148 15.4184 38.2787C15.2539 38.0759 15.0928 37.8609 14.9272 37.6555C15.1521 37.6768 15.3782 37.6999 15.6045 37.7246ZM2.38206 34.4462C2.90126 25.9003 4.33662 11.0576 8.9826 4.42704C7.02032 14.0989 6.06077 25.0783 6.15325 35.9742C6.02691 36.0198 5.90353 36.0786 5.77765 36.126C5.55316 36.0113 5.30231 36.0183 5.061 36.2197C4.9458 36.3164 4.84173 36.4424 4.73016 36.549C3.88672 36.9058 3.0485 37.2898 2.21778 37.7341C2.26663 36.4957 2.32548 35.3782 2.38206 34.4462ZM8.91058 65.2316C4.22505 64.7436 2.642 56.5071 2.23096 48.2876C2.3423 48.3857 2.4625 48.45 2.58747 48.4761C2.61314 48.5371 2.66041 48.5687 2.71199 48.5151C2.72312 48.5037 2.73516 48.4948 2.74652 48.4831C2.96488 48.4654 3.18779 48.3254 3.38751 48.0009C3.43841 47.9179 3.48976 47.833 3.54089 47.7488C4.48681 46.9543 5.49567 46.3774 6.53225 45.9416C7.00306 52.6978 7.89581 59.2541 9.24323 65.2515C9.13189 65.2437 9.02441 65.2434 8.91058 65.2316ZM11.3019 65.121C11.2939 65.0765 11.2905 65.0346 11.28 64.9887C9.78061 58.521 8.97851 51.911 8.6236 45.2338C9.19687 45.0783 9.77061 44.9435 10.3389 44.8251C12.9726 44.2765 15.417 45.3073 17.9633 45.1423C18.4616 55.505 16.9651 63.8987 11.3019 65.121Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="about section">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="about__title title">
+          About Surfing in the Canaries
+        </h2>
+        <div class="about__text-inner">
+          <div class="about__text text">
+            <p>
+              The Canary Islands are often referred to as the European Hawaiis – it's the perfect destination for
+              surfing enthusiasts:
+              stable warm winds year-round, sandy beaches, kilometers of untouched spaces, and crystal-clear waters.
+              Fuerteventura,
+              the second-largest island in the archipelago, becomes a true mecca for surfers.
+            </p>
+            <p>
+              Indeed, this is the best place in Spain to receive surfing lessons. Apart from the massive Atlantic waves
+              that roll in
+              during the winter and fall, Fuerteventura boasts numerous shallow, tranquil lagoons that are perfect for
+              teaching novice
+              surfers.
+            </p>
+            <p>
+              Surfing in the Canary Islands is available year-round, thanks to the consistent waves and favorable
+              weather conditions.
+              Whether you're a seasoned pro or a beginner, you'll find waves suited to your skill level. It's no
+              coincidence that this
+              place is considered the best for learning to surf and advancing to the next level with ease.
+            </p>
+            <p>
+              Among its many advantages, it's worth mentioning that Fuerteventura boasts the longest beaches in the
+              Canary Islands. As
+              a result, overcrowding by tourists is virtually unheard of here. You'll only come across like-minded
+              individuals who
+              share your passion for learning to surf.
+            </p>
+          </div>
+          <div class="about__text text">
+            <p>
+              Whether you're just curious about the world of surfing or you've already experienced the thrill of riding
+              the waves and
+              want to take your skills to the next level, our surfing school can provide lessons tailored to your skill
+              level.
+            </p>
+            <p>
+              Four hours of engaging daily lessons will help you confidently conquer the waves and make you feel like a
+              true surfer.
+            </p>
+            <p>
+              The main advantages of our school include high-quality teaching and lesson organization, safety (all our
+              clients
+              are insured with Allianz), excellent equipment and gear (provided for the entire course, including soft,
+              safe boards for
+              beginners).
+            </p>
+            <p>
+              First, we assess your skill level and physical fitness, and only then do we create a training program. We
+              can assure you
+              that after completing the training, you will not only have a fantastic experience but will also advance to
+              a new skill
+              level.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features section">
+    <div class="container">
+      <h2 class="features__title title">
+        IN SCHOOL, YOU WILL RECEIVE
+      </h2>
+      <div class="features__inner">
+        <div class="features__items">
+          <div class="features__item">
+            <h4 class="features__item-title features__item-title--acco">
+              ACCOMMODATION
+            </h4>
+            <p class="features__item-text text">
+              Our surfing school is located 100 meters from the ocean coast. Guests have access to an outdoor pool and
+              free Wi-Fi. The
+              upper terrace offers an ocean view. The distance to the city center is 15 minutes.
+            </p>
+          </div>
+          <div class="features__item">
+            <h4 class="features__item-title features__item-title--flight">
+              FLIGHT AND <br> INSURANCE
+            </h4>
+            <p class="features__item-text text">
+              All program participants are insured by Allianz insurance company. The flight from Tenerife to the island
+              of Lanzarote
+              and back is included in the program cost.
+            </p>
+          </div>
+          <div class="features__item">
+            <h4 class="features__item-title features__item-title--training">
+              TRAINING AND <br> EQUIPMENT
+            </h4>
+            <p class="features__item-text text">
+              All equipment and gear are provided by well-known manufacturers and are available for the entire course of
+              the program.
+              The training process starts with determining your riding level.
+            </p>
+          </div>
+        </div>
+        <div class="features__expertise expertise">
+          <div class="expertise__info">
+            <div class="expertise__info-item">
+              <div class="expertise__img expertise__img--return">
+                <style>
+                  .expertise__img--return::after {
+                    content: "85%";
+                  }
+                </style>
+                <img style="width: 85%;" src="/images/wawe.svg" alt="">
+              </div>
+            </div>
+            <p>Came for the second time</p>
+            <div class="expertise__info-item">
+              <div class="expertise__img expertise__img--surf">
+                <style>
+                  .expertise__img--surf::after {
+                    content: "95%";
+                  }
+                </style>
+                <img style="width: 95%;" src="/images/wawe.svg" alt="">
+              </div>
+            </div>
+            <p>Learned how to surf</p>
+            <div class="expertise__info-item">
+              <div class="expertise__img expertise__img--customers">
+                <style>
+                  .expertise__img--customers::after {
+                    content: "100%";
+                  }
+                </style>
+                <img style="width: 100%;" src="/images/wawe.svg" alt="">
+              </div>
+            </div>
+            <p>Satisfied customers</p>
+          </div>
+          <div class="expertise__text text">
+            <p>
+              A significant advantage of our school is our own teaching method. We have developed our own style of
+              teaching surfing,
+              which allows beginners to get on the board as quickly as possible.
+            </p>
+            <p>
+              It is our methodology and our instructors that have allowed us to pass the certification of the Canarian
+              Surfing
+              Federation - FEDERACIÓN CANARIA DE SURF. This means that our school complies with all international
+              standards.
+              Recertification is carried out annually, allowing us to continuously strive for improvement in our
+              teaching.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skillset section">
+    <div class="container">
+      <div class="skillset__inner">
+        <h2 class="skillset__title title">
+          CONQUER THE PEAKS
+        </h2>
+        <div class="skillset__text">
+          <p>
+            Our surfing school instructors are among the finest surfers on the Canary Islands. Among them is the
+            European longboard
+            champion, who is more than willing to share their experience with both beginners and more seasoned surfers.
+            All members
+            of our teaching team are certified members of the Canary Islands Surfing Federation. Some of them are fluent
+            in the
+            Russian language, which clearly distinguishes us as a Russian surfing school abroad!
+          </p>
+          <p>
+            Our coaching staff regularly participates in seminars and advanced training courses held worldwide by
+            various renowned
+            surf clubs and federations. This ensures that you're in capable hands when you choose our surfing school.
+            Our teaching
+            methods cater to everyone, whether you're a novice, intermediate, or advanced surfer. Our instructors tailor
+            their
+            approach to each individual, even though our surfing lessons are conducted in groups. However, we also offer
+            personalized surfing lessons - just you and the instructor!
+          </p>
+          <p>
+            Our surfing instruction methodology is designed to accommodate beginners, intermediate surfers, and
+            top-level surfers.
+            Our instructors are skilled at adapting to the needs of each student, even in a group setting. Additionally,
+            we provide
+            personalized one-on-one surfing lessons, where it's just you and the instructor. This personalized approach
+            ensures that
+            you get the most out of your surfing experience with us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery section">
+    <div class="container">
+      <div class="gallery__top">
+        <h2 class="title">
+          Gallery
+        </h2>
+        <ul class="gallery__list">
+          <li class="gallery__list-item active" data-id="all">
+            ALL
+          </li>
+          <li class="gallery__list-item" data-id="tourists">
+            TOURISTS
+          </li>
+          <li class="gallery__list-item" data-id="nature">
+            NATURE
+          </li>
+          <li class="gallery__list-item" data-id="pros">
+            PROS
+          </li>
+        </ul>
+      </div>
+      <div class="gallery__content grid">
+        <div class="gallery__item grid-item pros">
+          <img src="images/gallery/1.jpg" alt="gallery image">
+        </div>
+        <div class="gallery__item grid-item grid-item--width-2 tourists">
+          <img src="images/gallery/2.jpg" alt="gallery image">
+        </div>
+        <div class="gallery__item grid-item grid-item--width-3 pros">
+          <img src="images/gallery/3.jpg" alt="gallery image">
+        </div>
+        <div class="gallery__item grid-item grid-item--width-3 tourists">
+          <img src="images/gallery/4.jpg" alt="gallery image">
+        </div>
+        <div class="gallery__item grid-item grid-item--width-2 nature">
+          <img src="images/gallery/5.jpg" alt="gallery image">
+        </div>
+        <div class="gallery__item grid-item nature">
+          <img src="images/gallery/6.jpg" alt="gallery image">
+        </div>
+      </div>
+      <a href="" class="gallery__add">
+        SHOW MORE
+      </a>
+    </div>
+    <blockquote class="blockquote">
+      "If in doubt, go surfing."
+      <span class="blockquote__author">
+        Nate Young, the first World Surfing Champion
+      </span>
+    </blockquote>
+    <div class="container">
+      <div class="gallery__video">
+        <a class="gallery__video-link" href="">
+          <svg class="gallery__video-icon" width="75" height="88" viewBox="0 0 75 88" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M75 44L0 87.3013L0 0.69873L75 44Z" />
+          </svg>
+        </a>
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__video">
+              <iframe class="popup__iframe" width="1000" height="563"
+                src="https://www.youtube.com/embed/ma67yOdMQfs?si=gGvj4uQe6TPcXQo6" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__numbers">
+        <div class="gallery__numbers-item">
+          450
+          <h5>
+            tourists
+          </h5>
+        </div>
+        <div class="gallery__numbers-item">
+          2500
+          <h5>
+            hours of surfing
+          </h5>
+        </div>
+        <div class="gallery__numbers-item">
+          10
+          <h5>
+            pro trainers
+          </h5>
+        </div>
+        <div class="gallery__numbers-item">
+          365
+          <h5>
+            days a year
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider-blog">
+    <h2 class="title">
+      BLOG
+    </h2>
+    <div class="slider-blog__inner">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <a href="" class="swiper-slide__link">
+                  <h2 class="swiper-slide__title">
+                    WHAT TO BRING ON A SURF TRIP
+                  </h2>
+                </a>
+                <p class="swiper-slide__text">
+                  TOP 20 essentials for a comfortable vacation and learning experience
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="team section">
+    <div class="container">
+      <h2 class="title">
+        OUR TEAM
+      </h2>
+      <div class="team__items">
+        <div class="team__item">
+          <img src="images/team-1.jpg" alt="">
+          <h6 class="team__name">
+            Mike
+          </h6>
+          <p class="team__position">
+            Head Instructor
+          </p>
+        </div>
+        <div class="team__item">
+          <img src="images/team-2.jpg" alt="">
+          <h6 class="team__name">
+            Mary
+          </h6>
+          <p class="team__position">
+            Instructor
+          </p>
+        </div>
+        <div class="team__item">
+          <img src="images/team-3.jpg" alt="">
+          <h6 class="team__name">
+            Olga
+          </h6>
+          <p class="team__position">
+            Instructor
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing section">
+    <div class="container">
+      <h2 class="title">
+        PACKAGES
+      </h2>
+      <div class="pricing__items">
+        <ul class="pricing__item">
+          <li class="pricing__item-name">Standard</li>
+          <li>Accommodation in a villa for 6 nights</li>
+          <li>Standard category room</li>
+          <li>Surfing equipment</li>
+          <li>5 surfing lessons (2 hours each)</li>
+          <li>Insurance</li>
+          <li>Party with refreshments and disco</li>
+          <li class="pricing__item-num">450<sup>$</sup></li>
+        </ul>
+        <ul class="pricing__item">
+          <li class="pricing__item-name">All-Inclusive</li>
+          <li>Accommodation in a villa for 6 nights</li>
+          <li>Luxury category room</li>
+          <li>Surfing equipment</li>
+          <li>8 surfing lessons (2 hours each)</li>
+          <li>Insurance</li>
+          <li>Party with refreshments and disco</li>
+          <li>Flight from Tenerife to Lanzarote and back</li>
+          <li>Breakfast at the villa</li>
+          <li class="pricing__item-num">950<sup>$</sup></li>
+        </ul>
+        <ul class="pricing__item">
+          <li class="pricing__item-name">Pro</li>
+          <li>Accommodation in a villa for 8 nights</li>
+          <li>Luxury category room</li>
+          <li>Surfing equipment</li>
+          <li>16 surfing lessons (2 hours each)</li>
+          <li>Insurance</li>
+          <li>Party with refreshments and disco</li>
+          <li>Flight from Tenerife to Lanzarote and back</li>
+          <li>Breakfasts and dinners at the villa</li>
+          <li class="pricing__item-num">1450<sup>$</sup></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="connection section">
+    <img src="images/map.jpg" alt="map" class="connection__map">
+    <div class="container connection__request">
+      <h2 class="title">
+        LEAVE REQUEST
+      </h2>
+      <div class="connection__contacts">
+        <form class="form">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Phone">
+          <textarea placeholder="Leave a message, and we will get back to you soon."></textarea>
+          <button class="form__button">Send</button>
+        </form>
+        <div class="contact">
+          <p class="contact__item contact__connect">
+            Have a question?<br>
+            You can reach out to us:
+          </p>
+          <div class="contact__item">
+            <a class="contact__item-link" href="https://www.whatsapp.com/" target="_blank">WhatsApp,</a>
+            <a class="contact__item-link" href="https://www.viber.com/" target="_blank">Viber,</a>
+            <a class="contact__item-link" href="https://web.telegram.org/" target="_blank">Telegram</a><br>
+            <a class="contact__item-link" href="tel:+3806765252222">+3 467 486-37-88</a>
+          </div>
+          <adress class="contact__item">
+            Avenida grandes playas 79,<br>
+            Corralejo la Oliva Fuerteventura,<br>
+            Spain. 35660
+          </adress>
+        </div>
+      </div>
+      <div class="connection__social">
+        <a class="connection__social-link" href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+        <a class="connection__social-link" href="https://facebook.com/" target="_blank">FACEBOOK</a>
+        <a class="connection__social-link" href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <a href="#header" class="logo">
+      <svg width="60" height="63" viewBox="0 0 60 63" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.412 29.512H16.02L18.936 37.972L21.888 29.512H26.46L22.068 41.14L25.308 49.276L32.544 29.44H37.944L27.72 55H23.436L18.936 44.272L14.472 55H10.188L0 29.44H5.328L12.6 49.276L15.768 41.14L11.412 29.512Z" />
+        <path
+          d="M33.412 8.512H38.02L40.936 16.972L43.888 8.512H48.46L44.068 20.14L47.308 28.276L54.544 8.44H59.944L49.72 34H45.436L40.936 23.272L36.472 34H32.188L22 8.44H27.328L34.6 28.276L37.768 20.14L33.412 8.512Z" />
+      </svg>
+    </a>
+  </footer>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
