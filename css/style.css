@@ -678,6 +678,13 @@ form textarea {
   margin-bottom: 35px;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; 
+  box-shadow: 0 0 5px #00B2A0;
+}
+
 .form input:last-of-type {
   margin-bottom: 55px;
 }
